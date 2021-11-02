@@ -1,0 +1,28 @@
+html {
+    /*overflow: hidden;   스크롤 잠시 빼기*/ 
+}
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto; /*필요없는것같아서 삭제 */
+    zoom : 1.1;  /*화면 비율 고정 */
+	cursor: url(그림자마우스.svg), url(배경없는사인.png), auto;
+}
+
+body {
+    width: 1920px;
+    height: auto; 
+}
+
+img{
+    position : relative;
+    width: 1920px;
+    height : auto;
+}
+
+.screen{
+     
+
+}

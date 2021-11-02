@@ -1,0 +1,412 @@
+div#news_wrap ul, div#news_wrap li{
+    margin:0; 
+    padding:0;
+}
+
+div#news_wrap ul, div#news_wrap li{
+    list-style:none;
+}
+
+div#news_wrap{
+    position: relative;
+}
+
+div#news_wrap a{
+    width:380px; 
+    height:290px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    position: absolute; 
+    /*text-indent: 99999px;
+    이것들 다 안됨*/
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+div#news_wrap a:nth-child(n){
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+    
+}
+
+div#news_wrap a:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);   
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+}
+
+div#news_wrap a:nth-child(1){
+    background-image: url(작품사진/1.\ my\ own\ Gym.png); 
+    margin:2284px 1342px 6219px 198px;
+    
+}
+
+div#news_wrap a:nth-child(2){
+    background-image: url(작품사진/2.\ 서울\,\ 빛과\ 그림자.png); 
+    margin:2284px 947px 6219px 593px;
+}
+
+div#news_wrap a:nth-child(3){
+    background-image: url(작품사진/3.\ 맛의\ 풍류.png);
+    margin:2284px 552px 6219px 988px;
+}
+
+div#news_wrap a:nth-child(4){
+    background-image: url(작품사진/4.\ MOMS.png); 
+    margin:2284px 157px 6219px 1383px;
+}
+
+div#news_wrap a:nth-child(5){
+    background-image: url(작품사진/5.\ 잎섬유\ 브랜드\ ‘THAMON’.png); 
+    margin:2609px 1342px 5894px 198px;
+}
+
+div#news_wrap a:nth-child(6){
+    background-image: url(작품사진/6.\ 걸다노리개.png); 
+    margin:2609px 947px 5894px 593px;
+}
+
+div#news_wrap a:nth-child(7){
+    background-image: url(작품사진/7.\ Foot\ sticker+.png); 
+    margin:2609px 552px 5894px 988px;
+}
+
+div#news_wrap a:nth-child(8){
+    background-image: url(작품사진/8.\ 누리호\ 홍보\ 포스터.png); 
+    margin:2609px 157px 5894px 1383px;
+}
+
+div#news_wrap a:nth-child(9){
+    background-image: url(작품사진/9.\ Kidult’s\ rocking\ horse.png); 
+    margin:2934px 1342px 5569px 198px;
+}
+
+div#news_wrap a:nth-child(10){
+    background-image: url(작품사진/10.\ Anemoi.png); 
+    margin:2934px 947px 5569px 593px;
+}
+
+div#news_wrap a:nth-child(11){
+    background-image: url(작품사진/11.\ 국립부여박물관.png); 
+    margin:2934px 552px 5569px 988px;
+}
+
+div#news_wrap a:nth-child(12){
+    background-image: url(작품사진/12.\ 透過\(투과\).png); 
+    margin:2934px 157px 5569px 1383px;
+}
+
+div#news_wrap a:nth-child(13){
+    background-image: url(작품사진/13.\ Lagoon1.0.png); 
+    margin:3259px 1342px 5244px 198px;
+}
+
+div#news_wrap a:nth-child(14){
+    background-image: url(작품사진/14.\ 너드커넥션\ Level\ up\ 콘서트\ 홍보\ 포스터.png); 
+    margin:3259px 947px 5244px 593px;
+}
+
+div#news_wrap a:nth-child(15){
+    background-image: url(작품사진/15.\ 결합.png); 
+    margin:3259px 552px 5244px 988px;
+}
+
+div#news_wrap a:nth-child(16){
+    background-image: url(작품사진/16.\ Brett..png); 
+    margin:3259px 157px 5244px 1383px;
+}
+
+div#news_wrap a:nth-child(17){
+    background-image: url(작품사진/17.\ 2022\ Callender.png); 
+    margin:3584px 1342px 4919px 198px;
+}
+
+div#news_wrap a:nth-child(18){
+    background-image: url(작품사진/18.\ 여름밤.png); 
+    margin:3584px 947px 4919px 593px;
+}
+
+div#news_wrap a:nth-child(19){
+    background-image: url(작품사진/19.\ Seaweed\ Project.png); 
+    margin:3584px 552px 4919px 988px;
+}
+
+div#news_wrap a:nth-child(20){
+    background-image: url(작품사진/20.\ 라일락.png); 
+    margin:3584px 157px 4919px 1383px;
+}
+
+div#news_wrap a:nth-child(21){
+    background-image: url(작품사진/21.\ 동살.png); 
+    margin:3909px 1342px 4594px 198px;
+}
+
+div#news_wrap a:nth-child(22){
+    background-image: url(작품사진/22.\ SPATIUM.png); 
+    margin:3909px 947px 4594px 593px;
+}
+
+div#news_wrap a:nth-child(23){
+    background-image: url(작품사진/23.\ 병식이의\ 경남여행.png); 
+    margin:3909px 552px 4594px 988px;
+}
+
+div#news_wrap a:nth-child(24){
+    background-image: url(작품사진/24.\ 休\(휴\).png); 
+    margin:3909px 157px 4594px 1383px;
+}
+
+div#news_wrap a:nth-child(25){
+    background-image: url(작품사진/25.\ AQ.png); 
+    margin:4234px 1342px 4269px 198px;
+}
+
+div#news_wrap a:nth-child(26){
+    background-image: url(작품사진/26.\ 채식주의자를\ 위한\ 대체육\ 인포메이션디자인.png); 
+    margin:4234px 947px 4269px 593px;
+}
+
+div#news_wrap a:nth-child(27){
+    background-image: url(작품사진/27.\ 유영.png); 
+    margin:4234px 552px 4269px 988px;
+}
+
+div#news_wrap a:nth-child(28){
+    background-image: url(작품사진/28.\ AIR\ CIRCLE.png); 
+    margin:4234px 157px 4269px 1383px;
+}
+
+div#news_wrap a:nth-child(29){
+    background-image: url(작품사진/29.\ 시각장애인을\ 배려한\ CU편의점\ 정보디자인.png); 
+    margin:4559px 1342px 3944px 198px;
+}
+
+div#news_wrap a:nth-child(30){
+    background-image: url(작품사진/30.\ 여운.png); 
+    margin:4559px 947px 3944px 593px;
+}
+
+div#news_wrap a:nth-child(31){
+    background-image: url(작품사진/31.\ Clothes\ Manager.png); 
+    margin:4559px 552px 3944px 988px;
+}
+
+div#news_wrap a:nth-child(32){
+    background-image: url(작품사진/32.\ 빛나는\ 출근길.png); 
+    margin:4559px 157px 3944px 1383px;
+}
+
+div#news_wrap a:nth-child(33){
+    background-image: url(작품사진/33.\ 일출\ Sunrise.png); 
+    margin:4884px 1342px 3619px 198px;
+}
+
+div#news_wrap a:nth-child(34){
+    background-image: url(작품사진/34.\ CODE\ WALLE.png); 
+    margin:4884px 947px 3619px 593px;
+}
+
+div#news_wrap a:nth-child(35){
+    background-image: url(작품사진/35.\ 네이버\ 제페토.png); 
+    margin:4884px 552px 3619px 988px;
+}
+
+div#news_wrap a:nth-child(36){
+    background-image: url(작품사진/36.\ TONE\ TRIO.png); 
+    margin:4884px 157px 3619px 1383px;
+}
+
+div#news_wrap a:nth-child(37){
+    background-image: url(작품사진/37.\ Reverse.png); 
+    margin:5209px 1342px 3294px 198px;
+}
+
+div#news_wrap a:nth-child(38){
+    background-image: url(작품사진/38.\ Genesis.png); 
+    margin:5209px 947px 3294px 593px;
+}
+
+div#news_wrap a:nth-child(39){
+    background-image: url(작품사진/39.\ CATable.png); 
+    margin:5209px 552px 3294px 988px;
+}
+
+div#news_wrap a:nth-child(40){
+    background-image: url(작품사진/40.\ mignon.png); 
+    margin:5209px 157px 3294px 1383px;
+}
+
+div#news_wrap a:nth-child(41){
+    background-image: url(작품사진/41.\ ‘HOUSE\ OF\ VANS’.png); 
+    margin:5534px 1342px 2969px 198px;
+}
+
+div#news_wrap a:nth-child(42){
+    background-image: url(작품사진/42.\ Gainliness.png); 
+    margin:5534px 947px 2969px 593px;
+}
+
+div#news_wrap a:nth-child(43){
+    background-image: url(작품사진/43.\ Cow-Boy.png); 
+    margin:5534px 552px 2969px 988px;
+}
+
+div#news_wrap a:nth-child(44){
+    background-image: url(작품사진/44.\ 빈센트\ 반\ 고흐\ 전시.png); 
+    margin:5534px 157px 2969px 1383px;
+}
+
+div#news_wrap a:nth-child(45){
+    background-image: url(작품사진/45.\ UNIMAGINABLE.png); 
+    margin:5859px 1342px 2644px 198px;
+}
+
+div#news_wrap a:nth-child(46){
+    background-image: url(작품사진/46.\ Imagine.png); 
+    margin:5859px 947px 2644px 593px;
+}
+
+div#news_wrap a:nth-child(47){
+    background-image: url(작품사진/47.\ 구조.png); 
+    margin:5859px 552px 2644px 988px;
+}
+
+div#news_wrap a:nth-child(48){
+    background-image: url(작품사진/48.\ Muse\ mallorca\ Live.png); 
+    margin:5859px 157px 2644px 1383px;
+}
+
+div#news_wrap a:nth-child(49){
+    background-image: url(작품사진/49.\ 흐름과\ 리듬.png); 
+    margin:6184px 1342px 2319px 198px;
+}
+
+div#news_wrap a:nth-child(50){
+    background-image: url(작품사진/50\ witch_s\ drink\ -\ absente.png); 
+    margin:6184px 947px 2319px 593px;
+}
+
+div#news_wrap a:nth-child(51){
+    background-image: url(작품사진/51.\ 궁글다.png); 
+    margin:6184px 552px 2319px 988px;
+}
+
+div#news_wrap a:nth-child(52){
+    background-image: url(작품사진/52.\ 버즈와\ 일상.png); 
+    margin:6184px 157px 2319px 1383px;
+}
+
+div#news_wrap a:nth-child(53){
+    background-image: url(작품사진/53.\ Form\ Follows\ Basic\ Figure.png); 
+    margin:6509px 1342px 1994px 198px;
+}
+
+div#news_wrap a:nth-child(54){
+    background-image: url(작품사진/54.\ 달리기.png); 
+    margin:6509px 947px 1994px 593px;
+}
+
+div#news_wrap a:nth-child(55){
+    background-image: url(작품사진/55.\ Edge.png); 
+    margin:6509px 552px 1994px 988px;
+}
+
+div#news_wrap a:nth-child(56){
+    background-image: url(작품사진/56.\ Dior\ Lipglow.png); 
+    margin:6509px 157px 1994px 1383px;
+}
+
+div#news_wrap a:nth-child(57){
+    background-image: url(작품사진/57.\ 만남.png);
+    margin:6834px 1342px 1669px 198px; 
+}
+
+div#news_wrap a:nth-child(58){
+    background-image: url(작품사진/58.\ 나를\ 지켜요!.png); 
+    margin:6834px 947px 1669px 593px;
+}
+
+div#news_wrap a:nth-child(59){
+    background-image: url(작품사진/59.\ 삶\ Life.png); 
+    margin:6834px 552px 1669px 988px;
+}
+
+div#news_wrap a:nth-child(60){
+    background-image: url(작품사진/60.\ your\ moment.png); 
+    margin:6834px 157px 1669px 1383px;
+}
+
+div#news_wrap a:nth-child(61){
+    background-image: url(작품사진/61.\ New\ Balance.png); 
+    margin:7159px 1342px 1845px 198px;
+}
+
+div#news_wrap a:nth-child(62){
+    background-image: url(작품사진/62.\ 르와지르.png); 
+    margin:7159px 947px 1845px 593px;
+}
+
+div#news_wrap a:nth-child(63){
+    background-image: url(작품사진/63.\ ‘PEACOCK’\ 시리얼.png); 
+    margin:7159px 552px 1845px 988px;
+}
+
+div#news_wrap a:nth-child(64){
+    background-image: url(작품사진/64.\ 플랜테라.png); 
+    margin:7159px 157px 1845px 1383px;
+}
+
+div#news_wrap a:nth-child(65){
+    background-image: url(작품사진/65.\ 저스티스윙.png); 
+    margin:7484px 1342px 1019px 198px;
+}
+
+div#news_wrap a:nth-child(66){
+    background-image: url(작품사진/66.\ 진해브루어리.png); 
+    margin:7484px 947px 1019px 593px;
+}
+
+div#news_wrap a:nth-child(67){
+    background-image: url(작품사진/67.\ 낙화원.png); 
+    margin:7484px 552px 1019px 988px;
+}
+
+div#news_wrap a:nth-child(68){
+    background-image: url(작품사진/68.\ 포네이처.png); 
+    margin:7484px 157px 1019px 1383px;
+}
+
+div#news_wrap a:nth-child(69){
+    background-image: url(작품사진/69.\ 푸르릇.png); 
+    margin:7809px 1342px 694px 198px;
+}
+
+div#news_wrap a:nth-child(70){
+    background-image: url(작품사진/70.\ 오비르.png); 
+    margin:7809px 947px 694px 593px;
+}
+
+div#news_wrap a:nth-child(71){
+    background-image: url(작품사진/71.\ 나를\ 지켜요!.png); 
+    margin:7809px 552px 694px 988px;
+}
+
+div#news_wrap a:nth-child(72){
+    background-image: url(작품사진/72.\ 비엠.png); 
+    margin:7809px 157px 694px 1383px;
+}
+
+div#news_wrap a:nth-child(73){
+    background-image: url(작품사진/73.\ 치즈\ 어\ 클락.png); 
+    margin:8134px 1342px 369px 198px;
+}

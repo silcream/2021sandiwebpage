@@ -1,0 +1,31 @@
+html {
+    overflow: hidden;
+}
+
+html, body {
+    /*
+    display: block;
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    */
+	cursor: url(초록마우스.svg), url(배경없는사인.png), auto}
+
+a {cursor: url(초록마우스.svg), url(배경없는사인.png), auto}
+
+.Profile {
+    position : absolute;
+    width: 236px;
+    height: 121px;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 113px 32px 52px 105px;
+  }
+
+
+.star {
+    position : absolute;
+    opacity: 0.25; /* 반투명 코드 */
+}

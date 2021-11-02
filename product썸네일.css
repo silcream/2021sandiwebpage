@@ -1,0 +1,122 @@
+ul, li{
+    margin:0; 
+    padding:0;
+}
+
+ul, li{
+    list-style:none;
+}
+
+div#news_wrap{
+    position: relative;
+}
+
+div#news_wrap a{
+    width:380px; 
+    height:290px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    position: absolute; 
+    /*text-indent: 99999px;
+    이것들 다 안됨*/
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+div#news_wrap a:nth-child(n){
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+    
+}
+
+div#news_wrap a:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);   
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+}
+
+div#news_wrap a:nth-child(1){
+    background-image: url(thproduct/1.\ my\ own\ Gym.png); 
+    margin:575px 1342px 1344px 198px;
+    
+} 
+
+div#news_wrap a:nth-child(2){
+    background-image: url(thproduct/4.\ MOMS.png); 
+    margin:575px 947px 1019px 593px;
+}
+
+div#news_wrap a:nth-child(3){
+    background-image: url(thproduct/7.\ Foot\ sticker+.png); 
+    margin:575px 552px 1019px 988px;
+}
+
+div#news_wrap a:nth-child(4){
+    background-image: url(thproduct/10.\ Anemoi.png); 
+    margin:575px 157px 1019px 1383px;
+}
+
+div#news_wrap a:nth-child(5){
+    background-image: url(thproduct/13.\ Lagoon1.0.png); 
+    margin:900px 1342px 1019px 198px;
+}
+
+div#news_wrap a:nth-child(6){
+    background-image: url(thproduct/16.\ Brett..png); 
+    margin:900px 947px 1019px 593px;
+}
+
+div#news_wrap a:nth-child(7){
+    background-image: url(thproduct/19.\ Seaweed\ Project.png); 
+    margin:900px 552px 1019px 988px;
+}
+
+div#news_wrap a:nth-child(8){
+    background-image: url(thproduct/22.\ SPATIUM.png); 
+    margin:900px 157px 1019px 1383px;
+}
+
+div#news_wrap a:nth-child(9){
+    background-image: url(thproduct/25.\ AQ.png); 
+    margin:1225px 1342px 694px 198px;
+}
+
+div#news_wrap a:nth-child(10){
+    background-image: url(thproduct/28.\ AIR\ CIRCLE.png); 
+    margin:1225px 947px 694px 593px;
+}
+
+div#news_wrap a:nth-child(11){
+    background-image: url(thproduct/31.\ Clothes\ Manager.png); 
+    margin:1225px 552px 694px 988px;
+}
+
+div#news_wrap a:nth-child(12){
+    background-image: url(thproduct/34.\ CODE\ WALLE.png); 
+    margin:1225px 157px 694px 1383px;
+}
+
+div#news_wrap a:nth-child(13){
+    background-image: url(thproduct/37.\ Reverse.png); 
+    margin:1550px 1342px 369px 198px;
+}
+
+div#news_wrap a:nth-child(14){
+    background-image: url(작품사진/40.\ mignon.png); 
+    margin:1550px 947px 369px 593px;
+}
+
+div#news_wrap a:nth-child(15){
+    background-image: url(작품사진/43.\ Cow-Boy.png); 
+    margin:1550px 552px 369px 988px;
+}

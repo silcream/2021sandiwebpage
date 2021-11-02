@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8' name='viewport'
+        content="width=device-width, initial-scale=0.75, minimum-scale=0.75, maximum-scale=0.75, user-scalable=yes">
+    <title> M.M.M </title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="리뉴얼산디.css">
+ <!--   <link rel="stylesheet" type="text/css" href="메뉴움직임2.css">--> 
+    <link rel="stylesheet" type="text/css" href="썸네일설명.css"> 
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="햄버거 메뉴.css">
+    
+    <script src="리뉴얼js.js"></script>
+    <!-- 웹 페이지 크기 및 위치 자동 고정하기 -->
+    <script>
+        window.onfocus = function () {
+        }
+        window.onload = function () { 
+            window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
+            window.moveTo(0, 0); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
+            window.resizeTo(1920, 8793); // 웹페이지의 크기를 가로 1920 , 세로 1080 으로 고정(확장 및 축소)
+            // window.scrollTo(0, 250); // 페이지 상단 광고를 바로 볼 수 있게 스크롤 위치를 조정
+        }
+    </script>
+    
+    <!-- <script src="scrollreveal.min.js"></script> -->
+    <!--        <script type="text/javascript">
+            (function($){
+                $.aniPage=function(e){
+                    if(e.originalEvent.wheelDelta > 0){
+                        $("body, html").animate({
+                            scrollTop:$(window).scrollTop()-$(window).height()
+                        },1000,function(){
+                                $.aniOk = 0;
+                        });
+                    }else{
+                        $("body, html").animate({
+                            scrollTop:$(window).scrollTop()+$(window).height()
+                        },1000,function(){
+                                $.aniOk = 0;
+                        });
+                    }
+                };
+            })(jQuery);
+
+            $(function(){
+                $(".contInner").height($(window).height());
+                $.aniOk=0;
+                $(window).scrollTop(0);
+            });
+            $(document).on("mousewheel",function(e){
+                e.preventDefault();
+                if($.aniOk == 0){
+                    $.aniPage(e);
+                    $.aniOk = 1;
+                }
+            });
+        </script>
+-->
+
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            $(".scroll_move").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <!-- 1차배경_black-->
+    <div id="wrap">
+        <div class="contInner" style=" height: 1080px; ">
+            <div class='blackvideo'>
+                <!-- 2차배경 _ 영상 -->
+                <video width="1920px" height="1080px" autoplay loop muted>
+                    <source src="웹디자인 수정영상.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class='hello'>
+                <a href='javascript:doDisplay();'>Hello!</a><br>
+                <div id='mydiv' style="display: none;" class='helloimg'>
+                    <ul>
+                        <li><a href="리뉴얼about.html">&nbsp;&nbsp;&nbsp;&nbsp;About.&nbsp;&nbsp;</a></li>
+                        <li><a href="#workss">&nbsp;&nbsp;&nbsp;Works.&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="contactpage.html">&nbsp;&nbsp;&nbsp;Contact.&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="profilepage.html">&nbsp;&nbsp;Profile.&nbsp;&nbsp;&nbsp;</a></li>
+                      </ul>
+                </div>
+            </div>
+
+            <div class = "lastmenu">
+                <nav class="navbar navbar-expand-md navbar-light bg-white">
+                    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                        <input type="checkbox" id="menuicon">
+                        <label for="menuicon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <div class="sidebar">
+                            <div class="menu" style = "background-image: url('메뉴바격자3.png');">
+                                <div class="lalala tto-right-underline" style="width: 160px;"><a href="#workss" data-transition=“pop”>ALL.</a></div>
+                                <div class="lalala tto-right-underline" style="width: 371px;"><a href="productpage.html" data-transition=“pop”>PRODUCT.</a></div>
+                                <div class="lalala tto-right-underline" style="width: 270px;"><a href="Visualcommunication.html" data-transition=“pop”>VISUAL.</a></div>
+                                <div class="lalala tto-right-underline" style="width: 260px;"><a href="craftpage.html" data-transition=“pop”>CRAFT.</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+<!-- <a href='javascript:doooDisplay();'></a> -->
+
+<!-- 메뉴 일단 닫기
+            <div>
+                
+                <input class="burger-check" type="checkbox" id="burger-check" />
+                
+                <label class="burger-icon" for="burger-check">
+                    <span class="burger-sticks"></span>
+                </label>
+       
+                <div class="menu" style="position: fixed; color:cornflowerblue; ">
+                    <div class = "content" style="width: 715px; color:cornflowerblue; ">
+                        <a href='javascript:doooDisplay();'></a>
+                            <div id = 'mydivoo' style="display: none;" class = 'mymy'>
+                                <ul>
+                                    <li><a href="#workss" class="item">ALL</a></li>
+                                    <li><a href="productpage.html" class="item">PRODUCT</a></li>
+                                    <li><a href="Visualcommunication.html" class="item">VISUAL</a></li>
+                                    <li><a href="craftpage.html" class="item">CRAFT</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+-->
+            <div class='shadow'>
+                <img src="메인영상그라데이션.png" />
+            </div>
+
+            <div class="works">
+                <a href="#workss" id="scroll_move"><img src="worksss.png" /></a>
+            </div>
+
+
+
+            <!--
+                <div class = 'earth'>
+                    <img src="지구2.png"/>       
+                </div>
+-->
+            <!--
+                <div class="newww3333">
+                    <img src="newww3333-0333.png"/>
+                </div>
+-->
+            <div class="sandi2021">
+                <img src='산디졸업전시txt.svg' />
+            </div>
+
+            <!--
+                <div class="undersandi2021">
+                    <img src = '밑에사진.svg'/>
+                </div>
+-->            
+
+            <div class='exh'>
+                <a href='javascript:dooDisplay();'><img src='exhibition.svg' /></a>
+                    <div id='mydivo' style="display: none;" class = 'poster'>
+                        <img src="포스터다시.jpg" />
+                    </div>
+            </div>
+
+            <div class="textsandi">
+                2021.10.20(WED) - 10.25(MON)<br>
+                AM 10:00 PM:18:00<br>
+                Seongsan Art Hall Exhibition Room 4<br>
+            </div>
+
+            <div class="scroll">
+                <img src='스크롤롤.png' />
+            </div>
+
+
+            <!--
+                <div class="leftmenu">
+                    <img src="일자 3개.png"/>
+                </div> 
+-->
+
+        </div>
+
+        <div class="contInner" style="background-color: #000000; height : 8500px">
+            <div class='workss' id='workss'>
+                <p><span class="to-right-underline">Works.</span></p>
+            </div>
+
+        <div class="copyright">
+                <a>© By 2021 Changwon University Industrial Design Graduate. All rights reserved</a>
+        </div>   
+<!--
+            <div class='box'>
+                <img src="로고2.png" class="rogo" />
+            </div>
+-->
+<link rel="stylesheet" type="text/css" href="썸네일이야2.css">
+            <div id= "news_wrap" class = 'thumb'>
+                <ul>
+                    <a href="1번 my own gym.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">my own Gym</h2>
+                                <p style="">Home Gym design | Choi Eunji</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="2. 서울, 빛과 그림자.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">서울, 빛과 그림자</h2>
+                                <p style="">Advertising Design | Kim Hakjun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="3. 맛의 풍류.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">풍류 風流 ; 味</h2>
+                                <p style="">Prop design | Kim Gahyun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="4. MOMS.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">MOMS</h2>
+                                <p style="">Mobility Service design | Kim Jisu </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+ 
+                    <a href="5. 잎섬유 브랜드 ‘THAMON’.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">잎섬유 브랜드 ‘THAMON’</h2>
+                                <p style="">Advertising Design | Oh Junghoo</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="6. 걸다노리개.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">걸다:노리개</h2>
+                                <p style="">Wood furniture design | Noh Huiji</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="7. Foot sticker+.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Foot sticker+</h2>
+                                <p style="">Wearable device design | Jeong Yujin </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="8. 누리호 홍보 포스터.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">누리호 홍보 포스터</h2>
+                                <p style="">Advertising Design | Kim Minsik</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="9. Kidult’s rocking horse.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Kidult’s rocking horse</h2>
+                                <p style="">Advertising Design | Kim Minsik</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="10. Anemoi.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Anemoi</h2>
+                                <p style="">Drone design | Seol Ahyeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="11. 국립부여박물관.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="font-size: 20px;">국립부여박물관<br>백제금동대향로 전시 포스터</h2>
+                                <p style="">Advertising Design | Cheon Taerim</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="12. 透過(투과).html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">透過(투과)</h2>
+                                <p style="">Wood furniture design | Park Hyoeun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="13. Lagoon1.0.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Lagoon1.0</h2>
+                                <p style="">Water Mobitecture design | An Yoonjin, Yeo Jiyun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="14. 너드커넥션 Level up 콘서트 홍보 포스터.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="font-size: 20px;">너드커넥션<br>Level up 콘서트 홍보 포스터</h2>
+                                <p style="">Advertising Design | Hong Seokmin</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="15. 결합.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">결합</h2>
+                                <p style="">Wood furniture design | Son Hyeokki</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="16. Brett.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">brett.</h2>
+                                <p style="">Stationery design | Park Jaehwan</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="17. 2022 Callender.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">2022 Callender</h2>
+                                <p style="">Advertising Design | Kim Seungri</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="18. 여름밤.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">여름밤</h2>
+                                <p style="">Wood furniture design | Youn Seongwon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="19. Seaweed Project.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Seaweed Project</h2>
+                                <p style="">Material design | Lee Siyeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="20. 라일락.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">라일락</h2>
+                                <p style="">Advertising Design | Shin Suyeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="21. 동살.html" target = "_blank">>
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">동살</h2>
+                                <p style="">Wood furniture design | Lee Bom</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="22. SPATIUM.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">SPATIUM</h2>
+                                <p style="">Mobility design | Kim Dohyeong</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="23. 병식이의 경남여행.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">병식이의 경남여행</h2>
+                                <p style="">Advertising Design |  Eom Taemi</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="24. 休(휴).html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">休(휴)</h2>
+                                <p style="">Wood furniture design | Lee Yoonjeong</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="25. AQ.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">AQ</h2>
+                                <p style="">Fishbowl, Pots care devices design | Son Hyein</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="26. 채식주의자를 위한 대체육 인포메이션디자인.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="font-size: 20px;">채식주의자를 위한<br>대체육 인포메이션디자인</h2>
+                                <p style="">Advertising Design | Lee Yeji</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="27. 유영.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">유영</h2>
+                                <p style="">Prop design | Lee Jeonghyun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="28. AIR CIRCLE.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style=""> AIR CIRCLE</h2>
+                                <p style="">Air purifier Design | Cheon Dawon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="29. 시각장애인을 배려한 CU편의점 정보디자인.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="font-size: 20px;">시각장애인을 배려한<br>CU편의점 정보디자인</h2>
+                                <p style="">Advertising Design | Jo Hayeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="30. 여운.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">여운</h2>
+                                <p style="">Wood furniture design | Lee Jisu</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="31. Clothes Manager.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Clothes Manager</h2>
+                                <p style="">Product design | Baek Sumi</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="32. 빛나는 출근길.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">빛나는 출근길</h2>
+                                <p style="">Advertising Design |  Nguyen Thi Vinh</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="33. 일출 Sunrise.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">일출 Sunrise</h2>
+                                <p style="">Wood furniture design | Hwang Huiseon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="34. CODE WALLE.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">CODE WALLET</h2>
+                                <p style="">&nbsp;Big data-based visualization product design<br>Seo Minji</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="35. 네이버 제페토.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">네이버 제페토</h2>
+                                <p style="">Advertising Design | Choi Junsoo</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="36. TONE TRIO.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">TONE TRIO</h2>
+                                <p style="">Metal furniture design | Kim Gahyun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="37. Reverse.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Reverse</h2>
+                                <p style="">Product design | Lim Soojin</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="38. Genesis.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Genesis</h2>
+                                <p style="">Moving Image Design |  Kim Hakjun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="39. CATable.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">CATable</h2>
+                                <p style="">Metal furniture design | Noh Huiji</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="40. mignon.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">mignon</h2>
+                                <p style="">Product design | Jeong Ju</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="41. ‘HOUSE OF VANS’.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">‘HOUSE OF VANS’</h2>
+                                <p style="">Moving Image Design | Oh Junghoo</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="42. Gainliness.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Gainliness</h2>
+                                <p style="">Metal furniture design | Moon Soomin</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="43. Cow-Boy.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Rocking Cow</h2>
+                                <p style="">Product design | Roh Hamin</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="44. 빈센트 반 고흐 전시.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">빈센트 반 고흐 전시</h2>
+                                <p style="">Moving Image Design | Kim Minsik</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="45. UNIMAGINABLE.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">UNIMAGINABLE</h2>
+                                <p style="">Metal furniture design | Park Hyoeun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="46. Imagine.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Imagine</h2>
+                                <p style="">Moving Image Design | Cheon Taerim</p>                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="47. 구조.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">구조</h2>
+                                <p style="">Metal furniture design | Son Hyeokki</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="48. Muse mallorca Live.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">MUSE MALLORCA LIVE 2022</h2>
+                                <p style="">Moving Image Design | Hong Seokmin</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="49. 흐름과 리듬.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">흐름과 리듬</h2>
+                                <p style="">Metal furniture design | Youn Seongwon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="50 witch's drink - absente.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Witch's alcohol ; Absinthe</h2>
+                                <p style="">Moving Image Design | Kim Seungri</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="51. 궁글다.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">궁글다</h2>
+                                <p style="">Metal furniture design | Lee Bom</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="52. 버즈와 일상.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">버즈와 일상</h2>
+                                <p style="">Moving Image Design | Shin Suyeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="53. Form Follows Basic Figure.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Form Follows Basic Figure</h2>
+                                <p style="">Metal furniture design | Lee Yoonjeong</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="54. 달리기.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">여행에 미치다</h2>
+                                <p style="">Moving Image Design | Eom Taemi</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="55. Edge.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Edge</h2>
+                                <p style="">Metal furniture design | Lee Jeonghyun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="56. Dior Lipglow.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">Dior Lipglow</h2>
+                                <p style="">Moving Image Design | Lee Yeji</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="57. 만남.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="text-align: left;">만남</h2>
+                                <p style="">Metal furniture design | Lee Jisu</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="58. 나를 지켜요!.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">나를 지켜요!</h2>
+                                <p style="">Moving Image Design | Jo Hayeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="59. 삶 Life.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">삶 Life</h2>
+                                <p style="">Metal furniture design | Hwang Huiseon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="60. your moment.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">your moment</h2>
+                                <p style="">Moving Image Design | Nguyen Thi Vinh</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="61. New Balance.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">New Balance</h2>
+                                <p style="">Moving Image Design | Choi Junsoo</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="62. 르와지르.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">르와지르 - 한가로운 때</h2>
+                                <p style="">Package Design | Kim Hakjun</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="63. ‘PEACOCK’ 시리얼.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">‘PEACOCK’ 시리얼</h2>
+                                <p style="">Package Design | Oh Junghoo</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="64. 플랜테라.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">플랜테라</h2>
+                                <p style="">Package Design | Kim Minsik</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="65. 저스티스윙.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">저스티스윙</h2>
+                                <p style="">Package Design | Cheon Taerim</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="66. 진해브루어리.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">진해브루어리</h2>
+                                <p style="">Package Design | Hong Seokmin</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="67. 낙화원.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">낙화원</h2>
+                                <p style="">Package Design | Kim Seungri</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="68. 포네이처.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">포네이처</h2>
+                                <p style="">Package Design | Shin Suyeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="69. 푸르릇.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">푸르릇</h2>
+                                <p style="">Package Design | Eom Taemi</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="70. 오비르.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">오비르</h2>
+                                <p style="">Package Design | Lee Yeji</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="71. 감이당!.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">감이당</h2>
+                                <p style="">Package Design | Jo Hayeon</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="72. 비엠.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">비엠</h2>
+                                <p style="">Package Design | Nguyen Thi Vinh</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="73. 치즈 어 클락.html" target = "_blank">
+                        <figure>
+                            <div class="gallery-img"></div>
+                            <figcaption>
+                                <h2 style="">치즈 어 클락</h2>
+                                <p style="">Package Design | Choi Junsoo</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

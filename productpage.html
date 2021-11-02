@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Productpage </title>
+    <meta charset='UTF-8'>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="product 리뉴얼.css">
+    <link rel="stylesheet" type="text/css" href="햄버거 메뉴.css">
+    <link rel="stylesheet" type="text/css" href="product썸네일.css">
+    <link rel="stylesheet" type="text/css" href="썸네일설명.css">  
+
+    <script>
+        window.onfocus = function () {
+        }
+        window.onload = function () { 
+            window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
+            window.moveTo(0, 0); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
+            window.resizeTo(1920, 2209); // 웹페이지의 크기를 가로 1920 , 세로 1080 으로 고정(확장 및 축소)
+            //window.scrollTo(0, 250); // 페이지 상단 광고를 바로 볼 수 있게 스크롤 위치를 조정
+        }
+    </script>
+
+    <script>
+        $('a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 700);
+        return false;
+        });
+    </script>
+
+<body bgcolor="#161616">
+
+    <div class = 'title'>
+        <span class="to-right-underline">Product.</span>
+    </div>
+
+    <div class = "lastmenu">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <div class="menu" style = "background-image: url('메뉴바격자3.png');">
+                        <div class="lalala tto-right-underline" style="width: 160px;"><a href="index.html" data-transition=“pop”>ALL.</a></div>
+                        <div class="lalala tto-right-underline" style="width: 371px;"><a href="productpage.html" data-transition=“pop”>PRODUCT.</a></div>
+                        <div class="lalala tto-right-underline" style="width: 270px;"><a href="Visualcommunication.html" data-transition=“pop”>VISUAL.</a></div>
+                        <div class="lalala tto-right-underline" style="width: 260px;"><a href="craftpage.html" data-transition=“pop”>CRAFT.</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+        <div class="rogo">
+            <a href = "index.html"><img src="로고3.png"  /></a>
+        </div>
+
+        <div class='upshadow'>
+            <img src="Product, Visual, Craft 페이지 상단 그라데이션.png" />
+        </div>
+
+        
+        <div class='undershadow' style="z-index: 2;">
+            <img src="Works, Product, Visual, Craft 페이지 스크롤 따라 내려가는 그라데이션.png" />
+        </div>
+        
+
+        <div class="copyright">
+                <a>© By 2021 Changwon University Industrial Design Graduate. All rights reserved</a>
+        </div>
+
+<link rel="stylesheet" type="text/css" href="product썸네일.css">
+        <div id= "news_wrap" class = 'thumb'>
+            <ul>
+                <a href="1번 my own gym.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">my own Gym</h2>
+                            <p style="">Home Gym design | Choi Eunji</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="4. MOMS.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">MOMS</h2>
+                            <p style="">Mobility Service design | Kim Jisu </p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="7. Foot sticker+.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">Foot sticker+</h2>
+                            <p style="">Wearable device design | Jeong Yujin </p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="10. Anemoi.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">Anemoi</h2>
+                            <p style="">Drone design | Seol Ahyeon</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="13. Lagoon1.0.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">Lagoon1.0</h2>
+                            <p style="">Water Mobitecture design | An Yoonjin, Yeo Jiyun</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="16. Brett.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">brett.</h2>
+                            <p style="">Stationery design | Park Jaehwan</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="19. Seaweed Project.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">Seaweed Project</h2>
+                            <p style="">Material design | Lee Siyeon</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="22. SPATIUM.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">SPATIUM</h2>
+                            <p style="">Mobility design | Kim Dohyeong</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="25. AQ.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">AQ</h2>
+                            <p style="">Fishbowl, Pots care devices design | Son Hyein</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="28. AIR CIRCLE.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style=""> AIR CIRCLE</h2>
+                            <p style="">Air purifier Design / Cheon Dawon</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="31. Clothes Manager.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">Clothes Manager</h2>
+                            <p style="">Product design / Baek Sumi</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="34. CODE WALLE.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">CODE WALLE</h2>
+                            <p style="">Big data-based visualization product design / Seo Minji</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="37. Reverse.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">Reverse</h2>
+                            <p style="">Product design / Lim Soojin</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="40. mignon.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">mignon</h2>
+                            <p style="">Product design / Jeong Ju</p>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="43. Cow-Boy.html" target = "_blank">
+                    <figure>
+                        <div class="gallery-img"></div>
+                        <figcaption>
+                            <h2 style="">Rocking Cow</h2>
+                            <p style="">Product design / Roh Hamin</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </ul>
+        </div>
+</body>

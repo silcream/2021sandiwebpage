@@ -1,0 +1,384 @@
+html {
+    /*overflow: hidden;   스크롤 잠시 빼기*/
+    scroll-behavior: smooth; 
+}
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto; /*필요없는것같아서 삭제 */
+    zoom : 0.95;  /*화면 비율 고정 */
+	cursor: url(그림자마우스.svg), url(배경없는사인.png), auto;
+}
+
+a {cursor: url(그림자마우스.svg), url(배경없는사인.png), auto;}
+
+
+
+
+body {
+    width: 1920px;
+    height: 8793px; 
+}
+
+.shadow {
+	position : absolute;
+    width: 1920px;
+    height: 452px;
+    margin: 1059px 0 7272px 0; 
+    z-index: 0;
+    
+}
+
+.newww3333 {
+	position : absolute;
+    margin : 459px 607px 474px 627px; 
+    width: 686px;
+    height: 147px;
+  /*  justify-content: center;
+    align-items: center;
+    display : flex; */
+}
+
+.lastmenu {
+    z-index: 5;
+
+}
+
+.sandi2021{
+	position:absolute;
+    margin : 63px 1551px 8499px 70px;
+}
+
+.blackvideo {
+    position : absolute;
+}
+
+.star {
+    position : absolute;
+    opacity: 0.25; /* 반투명 코드 */
+}
+
+.earth {
+	position : absolute;
+	top : 30%;
+	left : 50%;
+    opacity: 0.13; /* 반투명 코드 */
+    margin-left : -215px;
+}
+
+.leftmenu{
+	position:fixed;
+	top:50%;
+    left:40px;
+}
+
+.poster{
+    margin : -750px auto auto auto; 
+}
+.works{
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+	position:absolute;
+/*    width: 28px;
+    height: 97px; */
+    margin : 485.5px 70px 497.5px 1822px; 
+/*    top : 65px;
+	right : 69px; */
+} 
+
+.works :hover {
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+}
+
+
+.works  img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+.works:hover img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.rogo{
+	position:fixed;
+    top: 70px;
+    left: 40px;
+}
+
+.exh{
+    position:absolute;
+    margin : 920px 1724px 7848px 70px; 
+  }
+
+.exh :hover {
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+}
+
+.textsandi{
+    position:absolute;
+    width: 192px;
+    height: 54px;
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    white-space:nowrap;
+    margin : 958px 1658px 7781px 70px; 
+  }
+
+
+  
+
+.undersandi2021{
+	position:fixed;
+	bottom:30px;
+    left:40px;
+}
+
+.container {
+    width: 70%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+.hello {
+    color: #fff;
+    position:absolute;
+    margin: 65px 69px 987px 1801px;
+    font-family:'KoPubWorld바탕체_Pro'; /* 아 이거 왜이래*/
+    font-weight: bold;
+    
+}
+
+.hello :hover{
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+}
+
+
+/* 이미지가 크기가 안줄어져 */
+.helloimg {
+    position:absolute;
+    margin: -20px -400px;
+    width: 516px;
+    height: 32px;
+    color:cornflowerblue;
+}
+
+
+/*hello 클릭 */
+.hello a:link {
+	color: white;
+	  background-color: transparent;
+	  text-decoration: none;
+      opacity: 1;
+}
+.hello a:visited {
+	color: #999999;
+    background-color: transparent;
+	text-decoration: none;
+    opacity: 1;
+}
+.hello a:hover {
+	color: gray;
+	background-color: transparent;
+	text-decoration: none;
+    opacity: 1;
+}
+.hello a:active {
+	color: black;
+	background-color: transparent;
+	text-decoration: underline;
+    opacity: 1;
+}	
+
+
+/* hello 메뉴바 */
+#mydiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family:'TV 2 Sans Display';
+    font-weight: bold;
+    font-size: 19px;
+    width: 513px;
+    height: 32px;
+
+}
+#mydiv ul:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+#mydiv li {
+    float: left;
+    height: 32px;
+
+}
+#mydiv li a {
+    display: block;
+    color: #999999;
+    text-align: center;
+    padding: 7px 16.1px;
+    text-decoration: none;
+
+}
+#mydiv li a:hover:not(.active) {
+    background-color: #111;
+
+
+}
+
+/*
+.active {
+    background-color: #4CAF50;
+
+}
+
+*/
+
+
+/*왼쪽에서 오른쪽으로 이동하는 에니메이션*/
+.to-right-underline{
+    position: relative;
+  }
+
+.to-right-underline:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #ffffff;
+  }
+
+.to-right-underline:hover:after{
+    width: 100%;
+    opacity: 1;
+  }
+
+.workss {
+    position : absolute;
+    width: 236px;
+    height: 121px;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 2074px 1343px 6569px 198px;
+    white-space:nowrap; /*줄바꿈 안하게 */
+  }
+
+
+.star {
+    position : absolute;
+    opacity: 0.25; /* 반투명 코드 */
+}
+
+.loader-3:before {
+    content: '';
+    border: 10px solid white;
+    top: -10px;
+    left: -10px;
+    animation-name: loader3;
+}
+
+    @keyframes loader3 {
+        0% { transform: scale(0); }
+        100% { transform: scale(1); }
+    }
+
+.box {
+    position: relative;
+    width:70px;
+    height:70px;
+    overflow:hidden;
+    margin: 70px 70px;
+    }
+    
+.rogo {
+    position : relative;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    }
+
+.scroll{
+        position:absolute;
+        margin : 962px 927px 7777px 927px; 
+      }
+
+/*
+div#news_wrap a {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+div#news_wrap a :hover{
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+
+}
+*/
+
+.copyright{
+    position : absolute;
+    width: 416px;
+    height: 16px;
+    padding: 8687px 752px 90px 752px;
+    font-family: 'SegoeUI';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #707070;
+    white-space:nowrap;
+  
+}

@@ -1,0 +1,55 @@
+html {
+    overflow: hidden;
+}
+
+html, body {
+    
+    display: block;
+    width: 100%;
+    height: 100%; 
+    margin: auto; 
+    
+	cursor: url(초록마우스.svg), url(배경없는사인.png), auto}
+
+a {cursor: url(초록마우스.svg), url(배경없는사인.png), auto}
+
+body {
+    width: 1920px;
+    height: 1080px; 
+}
+
+.leftmenu{
+	position:absolute;
+	top:50%;
+    left:40px;
+}
+
+.box {
+    width:70px;
+    height:70px;
+    overflow:hidden;
+    margin: 70px 70px;
+}
+
+.rogo {
+    position : relative;
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    margin : 70px 1790px 950px 70px;
+}
+
+.star {
+    position : absolute;
+    opacity: 0.25; /* 반투명 코드 */
+}
+
+.blackvideo {
+    position : absolute;
+}
+
+.picture{
+    position : relative;
+    object-fit:cover;
+    margin : auto 614px 157px 613px; 
+}

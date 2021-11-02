@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title> contact page </title>
+        <link rel="stylesheet" type="text/css" href="contactsandi.css">
+        <link rel="stylesheet" type="text/css" href="햄버거 메뉴.css">
+        <script>
+            window.onfocus = function () {
+            }
+            window.onload = function () { 
+                window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
+                window.moveTo(0, 0); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
+                window.resizeTo(1920, 1080); // 웹페이지의 크기를 가로 1920 , 세로 1080 으로 고정(확장 및 축소)
+                //window.scrollTo(0, 250); // 페이지 상단 광고를 바로 볼 수 있게 스크롤 위치를 조정
+            }
+        </script>
+    </head> 
+
+    <body bgcolor="black">
+        <div class='blackvideo'>
+            <!-- 2차배경 _ 영상 -->
+            <video width="100%" height="100%" autoplay loop muted>
+                <source src="space.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class = "lastmenu">
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="sidebar">
+                        <div class="menu" style = "background-image: url('메뉴바격자3.png');">
+                            <div class="lalala tto-right-underline" style="width: 160px;"><a href="index.html" data-transition=“pop”>ALL.</a></div>
+                            <div class="lalala tto-right-underline" style="width: 371px;"><a href="productpage.html" data-transition=“pop”>PRODUCT.</a></div>
+                            <div class="lalala tto-right-underline" style="width: 270px;"><a href="Visualcommunication.html" data-transition=“pop”>VISUAL.</a></div>
+                            <div class="lalala tto-right-underline" style="width: 260px;"><a href="craftpage.html" data-transition=“pop”>CRAFT.</a></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="rogo">
+            <a href = "index.html"><img src="로고3.png"  /></a>
+        </div>
+<!--
+        <div class = 'boxtwo'>
+            <a href = "리뉴얼 첫페이지.html"><src img = "뒤로가기마우스.svg"  class="rogotwo"/></a>
+        </div>
+-->
+        <div  >
+            <span class = 'email' style="font-family: Roboto;">dyriver@changwon.ac.kr</span>
+        </div>
+
+        <div>
+            <span class = 'add' style="font-family: Noto Sans CJK KR;">창원시 의창구 창원대학로20 국립창원대학교 예술대학 산업디자인학과 사무실</span>
+        </div>
+
+        <div>
+            <span class = 'tel' style="font-family: Roboto;">TEL : +82-055-213-3930 &nbsp;|</span>
+        </div>
+
+        <div>
+            <span class = 'fax'>FAX : 055-213-3939  &nbsp;|</span>
+        </div>
+
+        <div class = 'hohomap'>
+            <a href = "https://www.google.co.kr/maps/place/%EC%B0%BD
+            %EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90+%EC%98%88%EC%88%A0%EB%
+            8C%803%ED%98%B8%EA%B4%80/@35.2442148,128.6955148,18z/data=!3
+            m1!4b1!4m5!3m4!1s0x3568cd8c106a57d9:0xac6520899daef97e!8m2!3d35
+            .2442133!4d128.6962886"> <span class = 'map'>Google Map</span> </a>
+        </div>
+
+        <div class="copyright">
+            <a>© By 2021 Changwon University Industrial Design Graduate. All rights reserved</a>
+        </div>
+
+    </body>

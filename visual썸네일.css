@@ -1,0 +1,227 @@
+ul, li{
+    margin:0; 
+    padding:0;
+}
+
+ul, li{
+    list-style:none;
+}
+
+div#news_wrap{
+    position: relative;
+}
+
+div#news_wrap a{
+    width:380px; 
+    height:290px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    position: absolute; 
+    /*text-indent: 99999px;
+    이것들 다 안됨*/
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+div#news_wrap a:nth-child(n){
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+    
+}
+
+div#news_wrap a:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);   
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+}
+
+div#news_wrap a:nth-child(1){
+    background-image: url(thvisual/2.\ 서울\,\ 빛과\ 그림자.png); 
+    margin:575px 1342px 1344px 198px;
+    
+} 
+
+div#news_wrap a:nth-child(2){
+    background-image: url(thvisual/5.\ 잎섬유\ 브랜드\ ‘THAMON’.png); 
+    margin:575px 947px 1019px 593px;
+}
+
+div#news_wrap a:nth-child(3){
+    background-image: url(thvisual/8.\ 누리호\ 홍보\ 포스터.png); 
+    margin:575px 552px 1019px 988px;
+}
+
+div#news_wrap a:nth-child(4){
+    background-image: url(thvisual/11.\ 국립부여박물관.png); 
+    margin:575px 157px 1019px 1383px;
+}
+
+div#news_wrap a:nth-child(5){
+    background-image: url(thvisual/14.\ 너드커넥션\ Level\ up\ 콘서트\ 홍보\ 포스터.png); 
+    margin:900px 1342px 1019px 198px;
+}
+
+div#news_wrap a:nth-child(6){
+    background-image: url(thvisual/17.\ 2022\ Callender.png); 
+    margin:900px 947px 1019px 593px;
+}
+
+div#news_wrap a:nth-child(7){
+    background-image: url(thvisual/20.\ 라일락.png); 
+    margin:900px 552px 1019px 988px;
+}
+
+div#news_wrap a:nth-child(8){
+    background-image: url(thvisual/23.\ 병식이의\ 경남여행.png); 
+    margin:900px 157px 1019px 1383px;
+}
+
+div#news_wrap a:nth-child(9){
+    background-image: url(thvisual/26.\ 채식주의자를\ 위한\ 대체육\ 인포메이션디자인.png); 
+    margin:1225px 1342px 694px 198px;
+}
+
+div#news_wrap a:nth-child(10){
+    background-image: url(thvisual/29.\ 시각장애인을\ 배려한\ CU편의점\ 정보디자인.png); 
+    margin:1225px 947px 694px 593px;
+}
+
+div#news_wrap a:nth-child(11){
+    background-image: url(thvisual/32.\ 빛나는\ 출근길.png); 
+    margin:1225px 552px 694px 988px;
+}
+
+div#news_wrap a:nth-child(12){
+    background-image: url(thvisual/35.\ 네이버\ 제페토.png); 
+    margin:1225px 157px 694px 1383px;
+}
+
+div#news_wrap a:nth-child(13){
+    background-image: url(thvisual/38.\ Genesis.png); 
+    margin:1550px 1342px 369px 198px;
+}
+
+div#news_wrap a:nth-child(14){
+    background-image: url(thvisual/41.\ ‘HOUSE\ OF\ VANS’.png); 
+    margin:1550px 947px 369px 593px;
+}
+
+div#news_wrap a:nth-child(15){
+    background-image: url(thvisual/44.\ 빈센트\ 반\ 고흐\ 전시.png); 
+    margin:1550px 552px 369px 988px;
+}
+
+div#news_wrap a:nth-child(16){
+    background-image: url(thvisual/46.\ Imagine.png); 
+    margin:1558px 157px 369px 1383px;
+}
+
+div#news_wrap a:nth-child(17){
+    background-image: url(thvisual/48.\ Muse\ mallorca\ Live.png); 
+    margin:1883px 1342px 1674px 198px;
+}
+
+div#news_wrap a:nth-child(18){
+    background-image: url(thvisual/50\ witch_s\ drink\ -\ absente.png); 
+    margin:1883px 947px 1674px 593px;
+}
+
+div#news_wrap a:nth-child(19){
+    background-image: url(thvisual/52.\ 버즈와\ 일상.png); 
+    margin:1883px 552px 1674px 988px;
+}
+
+div#news_wrap a:nth-child(20){
+    background-image: url(thvisual/54.\ 달리기.png); 
+    margin:1883px 157px 1674px 1383px;
+}
+
+div#news_wrap a:nth-child(21){
+    background-image: url(thvisual/56.\ Dior\ Lipglow.png); 
+    margin:2208px 1342px 1349px 198px;
+}
+
+div#news_wrap a:nth-child(22){
+    background-image: url(thvisual/58.\ 나를\ 지켜요!.png); 
+    margin:2208px 947px 1349px 593px;
+}
+
+div#news_wrap a:nth-child(23){
+    background-image: url(thvisual/60.\ your\ moment.png); 
+    margin:2208px 552px 1349px 988px;
+}
+
+div#news_wrap a:nth-child(24){
+    background-image: url(thvisual/61.\ New\ Balance.png); 
+    margin:2208px 157px 1349px 1383px;
+}
+
+div#news_wrap a:nth-child(25){
+    background-image: url(thvisual/62.\ 르와지르.png); 
+    margin:2533px 1342px 1024px 198px;
+}
+
+div#news_wrap a:nth-child(26){
+    background-image: url(thvisual/63.\ ‘PEACOCK’\ 시리얼.png); 
+    margin:2533px 947px 1024px 593px;
+}
+
+div#news_wrap a:nth-child(27){
+    background-image: url(thvisual/64.\ 플랜테라.png); 
+    margin:2533px 552px 1024px 988px;
+}
+
+div#news_wrap a:nth-child(28){
+    background-image: url(thvisual/65.\ 저스티스윙.png); 
+    margin:2533px 157px 1024px 1383px;
+}
+
+div#news_wrap a:nth-child(29){
+    background-image: url(thvisual/66.\ 진해브루어리.png); 
+    margin:2858px 1342px 699px 198px;
+}
+
+div#news_wrap a:nth-child(30){
+    background-image: url(thvisual/67.\ 낙화원.png); 
+    margin:2858px 947px 699px 593px;
+}
+
+div#news_wrap a:nth-child(31){
+    background-image: url(thvisual/68.\ 포네이처.png); 
+    margin:2858px 552px 699px 988px;
+}
+
+div#news_wrap a:nth-child(32){
+    background-image: url(thvisual/69.\ 푸르릇.png); 
+    margin:2858px 157px 699px 1383px;
+}
+
+div#news_wrap a:nth-child(33){
+    background-image: url(thvisual/70.\ 오비르.png); 
+    margin:3183px 1342px 374px 198px;
+}
+
+div#news_wrap a:nth-child(34){
+    background-image: url(thvisual/71.\ 나를\ 지켜요!.png); 
+    margin:3183px 947px 3619px 593px;
+}
+
+div#news_wrap a:nth-child(35){
+    background-image: url(thvisual/72.\ 비엠.png); 
+    margin:3183px 552px 3619px 988px;
+}
+
+div#news_wrap a:nth-child(36){
+    background-image: url(thvisual/73.\ 치즈\ 어\ 클락.png); 
+    margin:3183px 157px 3619px 1383px;
+}

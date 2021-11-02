@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Profile </title>
+    <meta charset='UTF-8'>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="profile리뉴얼2.css">
+    <link rel="stylesheet" type="text/css" href="햄버거 메뉴.css">
+    <script>
+        window.onfocus = function () {
+        }
+        window.onload = function () { 
+            window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
+            window.moveTo(0, 0); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
+            window.resizeTo(1920, 3411); // 웹페이지의 크기를 가로 1920 , 세로 1080 으로 고정(확장 및 축소)
+            //window.scrollTo(0, 250); // 페이지 상단 광고를 바로 볼 수 있게 스크롤 위치를 조정
+        }
+    </script>
+
+<body bgcolor="#1a1a1a">
+
+    <div class = 'title'>
+        <span class="to-right-underline">Profile.</span>
+    </div>
+
+    <div class = "lastmenu">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <div class="menu" style = "background-image: url('메뉴바격자3.png');">
+                        <div class="lalala tto-right-underline" style="width: 160px;"><a href="index.html" data-transition=“pop”>ALL.</a></div>
+                        <div class="lalala tto-right-underline" style="width: 371px;"><a href="productpage.html" data-transition=“pop”>PRODUCT.</a></div>
+                        <div class="lalala tto-right-underline" style="width: 270px;"><a href="Visualcommunication.html" data-transition=“pop”>VISUAL.</a></div>
+                        <div class="lalala tto-right-underline" style="width: 260px;"><a href="craftpage.html" data-transition=“pop”>CRAFT.</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+        <div class="rogo">
+            <a href = "index.html"><img src="로고3.png"  /></a>
+        </div>
+
+        <div>
+            <img src="프로필 모음 파일.png"  class="picture"/>
+        </div>
+
+        <div class="copyright">
+                <a>© By 2021 Changwon University Industrial Design Graduate. All rights reserved</a>
+        </div>
+</body>

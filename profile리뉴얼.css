@@ -1,0 +1,107 @@
+html {
+    /*overflow: hidden;   스크롤 잠시 빼기*/ 
+}
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto; /*필요없는것같아서 삭제 */
+    zoom : 0.9;  /*화면 비율 고정 */
+	cursor: url(그림자마우스.svg), url(배경없는사인.png), auto;
+}
+
+a {cursor: url(그림자마우스.svg), url(배경없는사인.png), auto}
+
+
+body {
+    width: 1920px;
+    height: 3411px; 
+}
+
+.title{
+    position : absolute;
+    width: 336px;
+    height: 121px;
+    margin: 243px 1230px 3047px 264px;
+    font-family: Roboto;
+    font-size: 101px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.84;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    white-space:nowrap; /*줄바꿈 안하게 */
+    z-index: 2;
+}
+
+.blackvideo {
+    position : absolute;
+}
+
+.rogo {
+    position : absolute;
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    margin : 70px 1790px 950px 70px;
+    z-index: 1; /*이게 핵심이였음 */
+
+}
+
+.rogo :hover{
+    cursor: url(클릭마우스.svg), url(배경없는사인.png), auto;
+}
+
+
+.picture{
+    position : absolute;
+    width: 1412px;
+    height: 2626px; 
+    margin: 416px 269px 369px 239px;
+    z-index: 2;
+}
+
+.copyright{
+    position : absolute;
+    width: 416px;
+    height: 16px;
+    padding: 3355px 752px 40px 752px;
+    font-family: SegoeUI;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #707070;
+    white-space:nowrap;
+  
+}
+
+/*왼쪽에서 오른쪽으로 이동하는 에니메이션*/
+.to-right-underline{
+    position: relative;
+  }
+
+.to-right-underline:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0px;
+    height: 10px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #ffffff;
+  }
+
+.to-right-underline:hover:after{
+    width: 100%;
+    opacity: 1;
+  }
